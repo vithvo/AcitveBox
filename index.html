@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="googlebot" content="notranslate" />
+    <meta class="discription" content="Описание страницы" />
+    <meta name="keywords" content="Создание сайтов, верстка сайтов" />
     <title>ActiveBox</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Img/Favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Img/Favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Img/Favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Img/Favicons/site.webmanifest" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <!-- Sprite -->
@@ -70,30 +97,30 @@
     </svg>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
             <img class="img__logo" src="/Img/Intro/Logo.png" alt="Logo" />
           </div>
-          <nav class="nav">
-            <a href="" class="nav__link">Features</a>
-            <a href="" class="nav__link">Works</a>
-            <a href="" class="nav__link">Our taam</a>
-            <a href="" class="nav__link">Testimonials</a>
-            <a href="" class="nav__link">Download</a>
+          <nav class="nav" id="nav">
+            <a href="" class="nav__link" data-scroll="#features">Features</a>
+            <a href="" class="nav__link" data-scroll="#works">Works</a>
+            <a href="" class="nav__link" data-scroll="#team">Our taam</a>
+            <a href="" class="nav__link" data-scroll="#rewiews">Testimonials</a>
+            <a href="" class="nav__link" data-scroll="#download">Download</a>
           </nav>
 
           <!-- Burger -->
 
-          <button class="burger" type="button">
+          <button class="burger" type="button" id="navToggle">
             <span class="burger__item"> Menu</span>
           </button>
         </div>
       </div>
     </header>
     <!-- Intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="container">
         <div class="intro__inner">
           <h1 class="intro__title">
@@ -110,7 +137,7 @@
 
     <!-- Features -->
 
-    <div class="container">
+    <div class="container" id="features">
       <div class="features">
         <div class="features__item">
           <img
@@ -195,7 +222,7 @@
 
     <!-- Works -->
 
-    <div class="works">
+    <div class="works" id="works">
       <div class="works__item">
         <img class="woks__img" src="img/Works/Work1.jpg" alt="work" />
         <div class="works__content">
@@ -254,7 +281,7 @@
       </div>
     </div>
     <!-- Team -->
-    <div class="team">
+    <div class="team" id="team">
       <div class="container">
         <div class="team__inner">
           <div class="team__item">
@@ -379,23 +406,48 @@
 
     <!-- Testimonials -->
 
-    <div class="rewiews">
+    <div class="rewiews" id="rewiews">
       <div class="container">
-        <div class="rewiews__item">
-          <div class="rewiews__photo">
-            <img
-              class="rewiews__image"
-              src="/Img/Testimonials/Testimonials.jpg"
-              alt=""
-            />
-          </div>
-          <div class="rewiews__content">
-            <div class="rewiews__text">
-              “Integer posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Donec sed odio dui. Aenean eu leo quam...”
+        <div class="rewiews__slider" id="rewiewsSlider">
+          <div>
+            <div class="rewiews__item">
+              <div class="rewiews__photo">
+                <img
+                  class="rewiews__image"
+                  src="/Img/Testimonials/Testimonials.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="rewiews__content">
+                <div class="rewiews__text">
+                  “Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                </div>
+                <div class="rewiews__author">
+                  Susan Sims, Interaction Designer at XYZ
+                </div>
+              </div>
             </div>
-            <div class="rewiews__author">
-              Susan Sims, Interaction Designer at XYZ
+          </div>
+          <div>
+            <div class="rewiews__item">
+              <div class="rewiews__photo">
+                <img
+                  class="rewiews__image"
+                  src="/Img/Testimonials/Testimonials2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="rewiews__content">
+                <div class="rewiews__text">
+                  “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                  praesentium cum doloremque quasi dignissimos saepe omnis earum
+                  totam commodi consectetur.”
+                </div>
+                <div class="rewiews__author">
+                  Susan Sims, Interaction Designer at XYZ
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -403,7 +455,7 @@
     </div>
 
     <!-- Download -->
-    <div class="download">
+    <div class="download" id="download">
       <div class="container">
         <h3 class="download__title">
           Are You Ready to Start? Download Now For Free!
@@ -470,5 +522,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>
