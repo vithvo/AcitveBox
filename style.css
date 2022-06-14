@@ -35,6 +35,7 @@ p {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Header ===================================== */
@@ -138,6 +139,7 @@ p {
   border: none;
   cursor: pointer;
   transition: background 0.2s linear;
+  text-align: center;
 }
 
 .btn--red {
@@ -146,6 +148,10 @@ p {
 
 .btn--red:hover {
   background-color: #f70808;
+}
+
+.btn--long {
+  min-width: 280px;
 }
 
 /* Features ===================================== */
@@ -235,5 +241,221 @@ p {
 
 .works__text {
   font-size: 14px;
+  color: #fff;
+}
+
+/* Team ===================================== */
+
+.team {
+  margin: 100px 0 70px;
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team__item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.team__photo {
+  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team__name {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #2d3033;
+}
+
+.team__prof {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+}
+.team__text {
+  font-size: 14px;
+  color: #6c7279;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Social ===================================== */
+
+.social {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+}
+
+.social__icon {
+  fill: #c6cacc;
+  display: block;
+  height: 18px;
+  transition: fill 0.1s linear;
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+  fill: #e84545;
+}
+
+.social--footer {
+  justify-content: center;
+}
+
+.social--footer .social__item {
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.social--footer .social__item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social--footer .social__icon {
+  fill: #fff;
+}
+
+/* Testimonials ===================================== */
+
+.rewiews {
+  background-color: #53354a;
+  overflow: hidden;
+}
+
+.rewiews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rewiews__photo {
+  position: relative;
+  width: 50%;
+  height: 500px;
+}
+
+.rewiews__image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.rewiews__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  width: 50%;
+  color: #fff;
+}
+
+.rewiews__text {
+  font-family: "Cardo", sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.rewiews__author {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Download ===================================== */
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.download__text {
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Footer ===================================== */
+
+.footer {
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__block {
+  width: 33.333333%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__text {
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+
+/* Copyride ===================================== */
+
+.copyright {
+  background-color: #313454;
+  padding: 20px 0;
+}
+
+.copyright__text {
+  text-align: center;
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.5;
+}
+
+.copyright__text b {
   color: #fff;
 }
