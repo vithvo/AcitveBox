@@ -102,7 +102,7 @@ p {
 .intro {
   padding-top: 100px;
   height: 750px;
-  background: #2f314b url("img/Intro/Intro.jpg") center no-repeat;
+  background: #2f314b url("../img/Intro/Intro.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
